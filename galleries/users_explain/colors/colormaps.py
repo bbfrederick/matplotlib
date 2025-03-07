@@ -154,7 +154,7 @@ plot_color_gradients('Sequential',
 #
 # Many of the :math:`L^*` values from the Sequential2 plots are monotonically
 # increasing, but some (autumn, cool, spring, and winter) plateau or even go both
-# up and down in :math:`L^*` space. Others (afmhot, copper, gist_heat, and hot)
+# up and down in :math:`L^*` space. Others (afmhot, copper, gist_heat, hot, and antihot)
 # have kinks in the :math:`L^*` functions. Data that is being represented in a
 # region of the colormap that is at a plateau or kink will lead to a perception of
 # banding of the data in those values in the colormap (see [mycarta-banding]_ for
@@ -163,7 +163,7 @@ plot_color_gradients('Sequential',
 plot_color_gradients('Sequential (2)',
                      ['binary', 'gist_yarg', 'gist_gray', 'gray', 'bone',
                       'pink', 'spring', 'summer', 'autumn', 'winter', 'cool',
-                      'Wistia', 'hot', 'afmhot', 'gist_heat', 'copper'])
+                      'Wistia', 'hot', 'antihot', 'afmhot', 'gist_heat', 'copper'])
 
 # %%
 # Diverging
@@ -179,11 +179,16 @@ plot_color_gradients('Sequential (2)',
 # Berlin, Managua, and Vanimo are dark-mode diverging colormaps, with minimum
 # lightness at the center, and maximum at the extremes. These are taken from
 # F. Crameri's [scientific-colour-maps]_ version 8.0.1.
+#
+# Boston is also a dark-mode diverging colormap, combining a 'hot' colormap for 
+# positive values with a reversed 'antihot' (red and blue channels switched)
+# colormap for negative values
 
 plot_color_gradients('Diverging',
                      ['PiYG', 'PRGn', 'BrBG', 'PuOr', 'RdGy', 'RdBu', 'RdYlBu',
                       'RdYlGn', 'Spectral', 'coolwarm', 'bwr', 'seismic',
-                      'berlin', 'managua', 'vanimo'])
+                      'berlin', 'managua', 'vanimo',
+                      'boston'])
 
 # %%
 # Cyclic

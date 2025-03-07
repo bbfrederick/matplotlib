@@ -26,11 +26,11 @@ cmaps = [('Perceptually Uniform Sequential', [
          ('Sequential (2)', [
             'binary', 'gist_yarg', 'gist_gray', 'gray', 'bone', 'pink',
             'spring', 'summer', 'autumn', 'winter', 'cool', 'Wistia',
-            'hot', 'afmhot', 'gist_heat', 'copper']),
+            'hot', 'antihot', 'afmhot', 'gist_heat', 'copper']),
          ('Diverging', [
             'PiYG', 'PRGn', 'BrBG', 'PuOr', 'RdGy', 'RdBu',
             'RdYlBu', 'RdYlGn', 'Spectral', 'coolwarm', 'bwr', 'seismic',
-            'berlin', 'managua', 'vanimo']),
+            'berlin', 'managua', 'vanimo', 'boston']),
          ('Cyclic', ['twilight', 'twilight_shifted', 'hsv']),
          ('Qualitative', [
             'Pastel1', 'Pastel2', 'Paired', 'Accent',
